@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<module>
+  <!--TODO: Ensure UI logic allows different languages-->
+
+<User f="nodata">
+  <User f="noscroll">
+    <Select_User t="list" f="user" l="Control"/>
+  </User>
+</User>
+
+<Control f="nodata">
+  <Main>
+    <New_Ecosystem t="button" l="Ecosystem"/>
+  </Main>
+  <search/>
+</Control>
+
+<Ecosystem>
+  <fmt>{{Identifier}}</fmt>
+
+  <Occurence_Record>
+    <Photo_of_Ecosystem t="camera"/>
+    <gps/>
+    <Address/>
+    <Select_one_or_more_ecosystems_form_the_list t="webview">
+      <markdown>
+Select one or more ecosystems form the list:
+      </markdown>
+    </Select_one_or_more_ecosystems_form_the_list>
+    <Ecosystem_Identification_Key/>
+    <Comments/>
+  </Occurence_Record>
+
+  <Ecosystem_Section f="noscroll">
+    <Record_Ecosystem_Sections t="button" lc="Ecosystem_Section"/>
+    <Recorded_Ecosystem_Sections t="list" ec="Ecosystem_Section"/>
+  </Ecosystem_Section>
+
+  <Threat_Evidence>
+    <Evidence_of_Threats t="dropdown">
+      <!--@SOURCE: vocab/evidence-of-threats.xml-->
+    </Evidence_of_Threats>
+    <Photo t="camera"/>
+    <Comments/>
+  </Threat_Evidence>
+
+  <Driver_Evidence>
+    <Evidence_of_Ecological_Traits_of_Drivers t="dropdown">
+      <!--@SOURCE: vocab/placeholder.xml-->
+    </Evidence_of_Ecological_Traits_of_Drivers>
+    <Photo t="camera"/>
+    <Comments/>
+  </Driver_Evidence>
+
+  <Biota>
+    <Evidence_of_Characteristic_Biota t="dropdown">
+      <!--@SOURCE: vocab/placeholder.xml-->
+    </Evidence_of_Characteristic_Biota>
+    <Photo t="camera"/>
+    <Photo_ID/>
+    <Comments/>
+  </Biota>
+
+  <Hidden f="hidden">
+    <Identifier/>
+  </Hidden>
+
+</Ecosystem>
+
+<Ecosystem_Section>
+  <!--TODO: Should become parent's ID-->
+  <fmt>{{Ecosystem_Identification_Key}} {{Ecosystem_Confidence}}</fmt>
+
+  <Ecosystem_Section>
+    <Ecosystem_Identification_Key t="dropdown">
+      <!--@SOURCE: vocab/ecosystem-identification-key.xml-->
+    </Ecosystem_Identification_Key>
+    <Ecosystem_Confidence b="decimal">
+      Ecosystem Confidence (%)
+    </Ecosystem_Confidence>
+    <Measurement b="decimal"/>
+    <Unit_of_Measurement>
+      <opts>
+        <opt>
+          Unit
+          <opt>m²</opt>
+          <opt>ha</opt>
+          <opt>km²</opt>
+        </opt>
+        <opt>
+          Range
+          <opt>&lt;1 ha</opt>
+          <opt>1-10 ha</opt>
+          <opt>10-100 ha</opt>
+          <opt>&gt;100 ha</opt>
+        </opt>
+      </opts>
+    </Unit_of_Measurement>
+    <Comments/>
+  </Ecosystem_Section>
+</Ecosystem_Section>
+
+<logic><![CDATA[
+]]></logic>
+
+</module>

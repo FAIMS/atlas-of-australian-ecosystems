@@ -1,0 +1,205 @@
+<opts>
+  <opt>
+    1 Residential &amp; commercial development
+    <opt>1.1 Housing &amp; urban areas</opt>
+    <opt>1.2 Commercial &amp; industrial areas</opt>
+    <opt>1.3 Tourism &amp; recreation areas</opt>
+  </opt>
+
+  <opt>
+    2 Agriculture &amp; aquaculture
+    <opt>
+      2.1 Annual &amp; perennial non-timber crops
+      <opt>2.1.1 Shifting agriculture</opt>
+      <opt>2.1.2 Small-holder farming</opt>
+      <opt>2.1.3 Agro-industry farming</opt>
+      <opt>2.1.4 Scale Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      2.2 Wood &amp; pulp plantations
+      <opt>2.2.1 Small-holder plantations</opt>
+      <opt>2.2.2 Agro-industry plantations</opt>
+      <opt>2.2.3 Scale Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      2.3 Livestock farming &amp; ranching
+      <opt>2.3.1 Nomadic grazing</opt>
+      <opt>2.3.2 Small-holder grazing, ranching or farming</opt>
+      <opt>2.3.3 Agro-industry grazing, ranching or farming</opt>
+      <opt>2.3.4 Scale Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      2.4 Marine &amp; freshwater aquaculture
+      <opt>2.4.1 Subsistence/artisanal aquaculture</opt>
+      <opt>2.4.2 Industrial aquaculture</opt>
+      <opt>2.4.3 Scale Unknown/Unrecorded</opt>
+    </opt>
+  </opt>
+
+  <opt>
+    3 Energy production &amp; mining
+    <opt>3.1 Oil &amp; gas drilling</opt>
+    <opt>3.2 Mining &amp; quarrying</opt>
+    <opt>3.3 Renewable energy</opt>
+  </opt>
+
+  <opt>
+    4 Transportation &amp; service corridors
+    <opt>4.1 Roads &amp; railroads</opt>
+    <opt>4.2 Utility &amp; service lines</opt>
+    <opt>4.3 Shipping lanes</opt>
+    <opt>4.4 Flight paths</opt>
+  </opt>
+
+  <opt>
+    5 Biological resource use
+    <opt>
+      5.1 Hunting &amp; collecting terrestrial animals
+      <opt>5.1.1 Intentional use (species being assessed is the target)</opt>
+      <opt>5.1.2 Unintentional effects (species being assessed is not the target)</opt>
+      <opt>5.1.3 Persecution/control</opt>
+      <opt>5.1.4 Motivation Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      5.2 Gathering terrestrial plants
+      <opt>5.2.1 Intentional use (species being assessed is the target)</opt>
+      <opt>5.2.2 Unintentional effects (species being assessed is not the target)</opt>
+      <opt>5.2.3 Persecution/control</opt>
+      <opt>5.2.4 Motivation Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      5.3 Logging &amp; wood harvesting
+      <opt>5.3.1 Intentional use: subsistence/small scale (species being assessed is the target [harvest]</opt>
+      <opt>5.3.2 Intentional use: large scale (species being assessed is the target)[harvest]</opt>
+      <opt>5.3.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]</opt>
+      <opt>5.3.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]</opt>
+      <opt>5.3.5 Motivation Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      5.4 Fishing &amp; harvesting aquatic resources
+      <opt>5.4.1 Intentional use: subsistence/small scale (species being assessed is the target)[harvest]</opt>
+      <opt>5.4.2 Intentional use: large scale (species being assessed is the target)[harvest]</opt>
+      <opt>5.4.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]</opt>
+      <opt>5.4.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]</opt>
+      <opt>5.4.5 Persecution/control</opt>
+      <opt>5.4.6 Motivation Unknown/Unrecorded</opt>
+    </opt>
+  </opt>
+
+  <opt>
+    6 Human intrusions &amp; disturbance
+    <opt>6.1 Recreational activities</opt>
+    <opt>6.2 War, civil unrest &amp; military exercises</opt>
+    <opt>6.3 Work &amp; other activities</opt>
+  </opt>
+
+  <opt>
+    7 Natural system modifications
+    <opt>
+      7.1 Fire &amp; fire suppression
+      <opt>7.1.1 Increase in fire frequency/intensity</opt>
+      <opt>7.1.2 Suppression in fire frequency/intensity</opt>
+      <opt>7.1.3 Trend Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      7.2 Dams &amp; water management/use
+      <opt>7.2.1 Abstraction of surface water (domestic use)</opt>
+      <opt>7.2.2 Abstraction of surface water (commercial use)</opt>
+      <opt>7.2.3 Abstraction of surface water (agricultural use)</opt>
+      <opt>7.2.4 Abstraction of surface water (unknown use)</opt>
+      <opt>7.2.5 Abstraction of ground water (domestic use)</opt>
+      <opt>7.2.6 Abstraction of ground water (commercial use)</opt>
+      <opt>7.2.7 Abstraction of ground water (agricultural use)</opt>
+      <opt>7.2.8 Abstraction of ground water (unknown use)</opt>
+      <opt>7.2.9 Small dams</opt>
+      <opt>7.2.10 Large dams</opt>
+      <opt>7.2.11 Dams (size unknown)</opt>
+    </opt>
+    <opt>7.3 Other ecosystem modifications</opt>
+  </opt>
+
+  <opt>
+    8 Invasive &amp; other problematic species, genes &amp; diseases
+    <opt>
+      8.1 Invasive non-native/alien species/diseases
+      <opt>8.1.1 Unspecified species</opt>
+      <opt>8.1.2 Named species</opt>
+    </opt>
+    <opt>
+      8.2 Problematic native species/diseases
+      <opt>8.2.1 Unspecified species</opt>
+      <opt>8.2.2 Named species</opt>
+    </opt>
+    <opt>8.3 Introduced genetic material</opt>
+    <opt>
+      8.4 Problematic species/diseases of unknown origin
+      <opt>8.4.1 Unspecified species</opt>
+      <opt>8.4.2 Named species</opt>
+    </opt>
+    <opt>
+      8.5 Viral/prion-induced diseases
+      <opt>8.5.1 Unspecified &quot;species&quot; (disease)</opt>
+      <opt>8.5.2 Named &quot;species&quot; (disease)</opt>
+    </opt>
+    <opt>8.6 Diseases of unknown cause</opt>
+  </opt>
+
+  <opt>
+    9 Pollution
+    <opt>
+      9.1 Domestic &amp; urban waste water
+      <opt>9.1.1 Sewage</opt>
+      <opt>9.1.2 Run-off</opt>
+      <opt>9.1.3 Type Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      9.2 Industrial &amp; military effluents
+      <opt>9.2.1 Oil spills</opt>
+      <opt>9.2.2 Seepage from mining</opt>
+      <opt>9.2.3 Type Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      9.3Agricultural &amp; forestry effluents
+      <opt>9.3.1 Nutrient loads</opt>
+      <opt>9.3.2 Soil erosion, sedimentation</opt>
+      <opt>9.3.3 Herbicides &amp; pesticides</opt>
+      <opt>9.3.4Type Unknown/Unrecorded</opt>
+    </opt>
+    <opt>9.4Garbage&amp; solid waste</opt>
+    <opt>
+      9.5 Air-borne pollutants
+      <opt>9.5.1 Acid rain</opt>
+      <opt>9.5.2 Smog</opt>
+      <opt>9.5.3 Ozone</opt>
+      <opt>9.5.4 Type Unknown/Unrecorded</opt>
+    </opt>
+    <opt>
+      9.6Excess energy
+      <opt>9.6.1 Light pollution</opt>
+      <opt>9.6.2 Thermal pollution</opt>
+      <opt>9.6.3 Noise pollution</opt>
+      <opt>9.6.4Type Unknown/Unrecorded</opt>
+    </opt>
+  </opt>
+
+  <opt>
+    10 Geological events
+    <opt>10.1 Volcanoes</opt>
+    <opt>10.2 Earthquakes/tsunamis</opt>
+    <opt>10.3 Avalanches/landslides</opt>
+  </opt>
+
+  <opt>
+    11 Climate change &amp; severe weather
+    <opt>11.1 Habitat shifting &amp; alteration</opt>
+    <opt>11.2 Droughts</opt>
+    <opt>11.3 Temperature extremes</opt>
+    <opt>11.4 Storms &amp; flooding</opt>
+    <opt>11.5 Other impacts</opt>
+  </opt>
+
+  <opt>
+    12 Other options
+    <opt>12.1 Other threat</opt>
+  </opt>
+</opts>

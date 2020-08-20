@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataSchema>
+  <RelationshipElement name="Ecosystem - Ecosystem Section" type="hierarchical">
+    <description>A 1-to-n relationship between the parent and its children, respectively.</description>
+    <parent>Parent Of</parent>
+    <child>Child Of</child>
+  </RelationshipElement>
+  <ArchaeologicalElement name="Ecosystem">
+    <description></description>
+    <property name="Identifier" type="measure" isIdentifier="true">
+      <description></description>
+      <formatString>$2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Photo of Ecosystem" type="file" file="true" thumbnail="true">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Latitude" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Longitude" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Northing" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Easting" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Accuracy" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Address" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Ecosystem Ecosystem Identification Key" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Comments" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Evidence of Threats" type="vocab">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{1_Residential___commercial_development}
+<description> </description><term>{1_1_Housing___urban_areas}
+<description> </description></term><term>{1_2_Commercial___industrial_areas}
+<description> </description></term><term>{1_3_Tourism___recreation_areas}
+<description> </description></term></term>
+        <term>{2_Agriculture___aquaculture}
+<description> </description><term>{2_1_Annual___perennial_non_timber_crops}
+<description> </description><term>{2_1_1_Shifting_agriculture}
+<description> </description></term><term>{2_1_2_Small_holder_farming}
+<description> </description></term><term>{2_1_3_Agro_industry_farming}
+<description> </description></term><term>{2_1_4_Scale_Unknown_Unrecorded}
+<description> </description></term></term><term>{2_2_Wood___pulp_plantations}
+<description> </description><term>{2_2_1_Small_holder_plantations}
+<description> </description></term><term>{2_2_2_Agro_industry_plantations}
+<description> </description></term><term>{2_2_3_Scale_Unknown_Unrecorded}
+<description> </description></term></term><term>{2_3_Livestock_farming___ranching}
+<description> </description><term>{2_3_1_Nomadic_grazing}
+<description> </description></term><term>{2_3_2_Small_holder_grazing__ranching_or_farming}
+<description> </description></term><term>{2_3_3_Agro_industry_grazing__ranching_or_farming}
+<description> </description></term><term>{2_3_4_Scale_Unknown_Unrecorded}
+<description> </description></term></term><term>{2_4_Marine___freshwater_aquaculture}
+<description> </description><term>{2_4_1_Subsistence_artisanal_aquaculture}
+<description> </description></term><term>{2_4_2_Industrial_aquaculture}
+<description> </description></term><term>{2_4_3_Scale_Unknown_Unrecorded}
+<description> </description></term></term></term>
+        <term>{3_Energy_production___mining}
+<description> </description><term>{3_1_Oil___gas_drilling}
+<description> </description></term><term>{3_2_Mining___quarrying}
+<description> </description></term><term>{3_3_Renewable_energy}
+<description> </description></term></term>
+        <term>{4_Transportation___service_corridors}
+<description> </description><term>{4_1_Roads___railroads}
+<description> </description></term><term>{4_2_Utility___service_lines}
+<description> </description></term><term>{4_3_Shipping_lanes}
+<description> </description></term><term>{4_4_Flight_paths}
+<description> </description></term></term>
+        <term>{5_Biological_resource_use}
+<description> </description><term>{5_1_Hunting___collecting_terrestrial_animals}
+<description> </description><term>{5_1_1_Intentional_use__species_being_assessed_is_the_target_}
+<description> </description></term><term>{5_1_2_Unintentional_effects__species_being_assessed_is_not_the_target_}
+<description> </description></term><term>{5_1_3_Persecution_control}
+<description> </description></term><term>{5_1_4_Motivation_Unknown_Unrecorded}
+<description> </description></term></term><term>{5_2_Gathering_terrestrial_plants}
+<description> </description><term>{5_2_1_Intentional_use__species_being_assessed_is_the_target_}
+<description> </description></term><term>{5_2_2_Unintentional_effects__species_being_assessed_is_not_the_target_}
+<description> </description></term><term>{5_2_3_Persecution_control}
+<description> </description></term><term>{5_2_4_Motivation_Unknown_Unrecorded}
+<description> </description></term></term><term>{5_3_Logging___wood_harvesting}
+<description> </description><term>{5_3_1_Intentional_use__subsistence_small_scale__species_being_assessed_is_the_target__harvest_}
+<description> </description></term><term>{5_3_2_Intentional_use__large_scale__species_being_assessed_is_the_target__harvest_}
+<description> </description></term><term>{5_3_3_Unintentional_effects__subsistence_small_scale__species_being_assessed_is_not_the_target__harvest_}
+<description> </description></term><term>{5_3_4_Unintentional_effects__large_scale__species_being_assessed_is_not_the_target__harvest_}
+<description> </description></term><term>{5_3_5_Motivation_Unknown_Unrecorded}
+<description> </description></term></term><term>{5_4_Fishing___harvesting_aquatic_resources}
+<description> </description><term>{5_4_1_Intentional_use__subsistence_small_scale__species_being_assessed_is_the_target__harvest_}
+<description> </description></term><term>{5_4_2_Intentional_use__large_scale__species_being_assessed_is_the_target__harvest_}
+<description> </description></term><term>{5_4_3_Unintentional_effects__subsistence_small_scale__species_being_assessed_is_not_the_target__harvest_}
+<description> </description></term><term>{5_4_4_Unintentional_effects__large_scale__species_being_assessed_is_not_the_target__harvest_}
+<description> </description></term><term>{5_4_5_Persecution_control}
+<description> </description></term><term>{5_4_6_Motivation_Unknown_Unrecorded}
+<description> </description></term></term></term>
+        <term>{6_Human_intrusions___disturbance}
+<description> </description><term>{6_1_Recreational_activities}
+<description> </description></term><term>{6_2_War__civil_unrest___military_exercises}
+<description> </description></term><term>{6_3_Work___other_activities}
+<description> </description></term></term>
+        <term>{7_Natural_system_modifications}
+<description> </description><term>{7_1_Fire___fire_suppression}
+<description> </description><term>{7_1_1_Increase_in_fire_frequency_intensity}
+<description> </description></term><term>{7_1_2_Suppression_in_fire_frequency_intensity}
+<description> </description></term><term>{7_1_3_Trend_Unknown_Unrecorded}
+<description> </description></term></term><term>{7_2_Dams___water_management_use}
+<description> </description><term>{7_2_1_Abstraction_of_surface_water__domestic_use_}
+<description> </description></term><term>{7_2_2_Abstraction_of_surface_water__commercial_use_}
+<description> </description></term><term>{7_2_3_Abstraction_of_surface_water__agricultural_use_}
+<description> </description></term><term>{7_2_4_Abstraction_of_surface_water__unknown_use_}
+<description> </description></term><term>{7_2_5_Abstraction_of_ground_water__domestic_use_}
+<description> </description></term><term>{7_2_6_Abstraction_of_ground_water__commercial_use_}
+<description> </description></term><term>{7_2_7_Abstraction_of_ground_water__agricultural_use_}
+<description> </description></term><term>{7_2_8_Abstraction_of_ground_water__unknown_use_}
+<description> </description></term><term>{7_2_9_Small_dams}
+<description> </description></term><term>{7_2_10_Large_dams}
+<description> </description></term><term>{7_2_11_Dams__size_unknown_}
+<description> </description></term></term><term>{7_3_Other_ecosystem_modifications}
+<description> </description></term></term>
+        <term>{8_Invasive___other_problematic_species__genes___diseases}
+<description> </description><term>{8_1_Invasive_non_native_alien_species_diseases}
+<description> </description><term>{8_1_1_Unspecified_species}
+<description> </description></term><term>{8_1_2_Named_species}
+<description> </description></term></term><term>{8_2_Problematic_native_species_diseases}
+<description> </description><term>{8_2_1_Unspecified_species}
+<description> </description></term><term>{8_2_2_Named_species}
+<description> </description></term></term><term>{8_3_Introduced_genetic_material}
+<description> </description></term><term>{8_4_Problematic_species_diseases_of_unknown_origin}
+<description> </description><term>{8_4_1_Unspecified_species}
+<description> </description></term><term>{8_4_2_Named_species}
+<description> </description></term></term><term>{8_5_Viral_prion_induced_diseases}
+<description> </description><term>{8_5_1_Unspecified__species___disease_}
+<description> </description></term><term>{8_5_2_Named__species___disease_}
+<description> </description></term></term><term>{8_6_Diseases_of_unknown_cause}
+<description> </description></term></term>
+        <term>{9_Pollution}
+<description> </description><term>{9_1_Domestic___urban_waste_water}
+<description> </description><term>{9_1_1_Sewage}
+<description> </description></term><term>{9_1_2_Run_off}
+<description> </description></term><term>{9_1_3_Type_Unknown_Unrecorded}
+<description> </description></term></term><term>{9_2_Industrial___military_effluents}
+<description> </description><term>{9_2_1_Oil_spills}
+<description> </description></term><term>{9_2_2_Seepage_from_mining}
+<description> </description></term><term>{9_2_3_Type_Unknown_Unrecorded}
+<description> </description></term></term><term>{9_3Agricultural___forestry_effluents}
+<description> </description><term>{9_3_1_Nutrient_loads}
+<description> </description></term><term>{9_3_2_Soil_erosion__sedimentation}
+<description> </description></term><term>{9_3_3_Herbicides___pesticides}
+<description> </description></term><term>{9_3_4Type_Unknown_Unrecorded}
+<description> </description></term></term><term>{9_4Garbage__solid_waste}
+<description> </description></term><term>{9_5_Air_borne_pollutants}
+<description> </description><term>{9_5_1_Acid_rain}
+<description> </description></term><term>{9_5_2_Smog}
+<description> </description></term><term>{9_5_3_Ozone}
+<description> </description></term><term>{9_5_4_Type_Unknown_Unrecorded}
+<description> </description></term></term><term>{9_6Excess_energy}
+<description> </description><term>{9_6_1_Light_pollution}
+<description> </description></term><term>{9_6_2_Thermal_pollution}
+<description> </description></term><term>{9_6_3_Noise_pollution}
+<description> </description></term><term>{9_6_4Type_Unknown_Unrecorded}
+<description> </description></term></term></term>
+        <term>{10_Geological_events}
+<description> </description><term>{10_1_Volcanoes}
+<description> </description></term><term>{10_2_Earthquakes_tsunamis}
+<description> </description></term><term>{10_3_Avalanches_landslides}
+<description> </description></term></term>
+        <term>{11_Climate_change___severe_weather}
+<description> </description><term>{11_1_Habitat_shifting___alteration}
+<description> </description></term><term>{11_2_Droughts}
+<description> </description></term><term>{11_3_Temperature_extremes}
+<description> </description></term><term>{11_4_Storms___flooding}
+<description> </description></term><term>{11_5_Other_impacts}
+<description> </description></term></term>
+        <term>{12_Other_options}
+<description> </description><term>{12_1_Other_threat}
+<description> </description></term></term>
+      </lookup>
+    </property>
+    <property name="Photo" type="file" file="true" thumbnail="true">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Comments" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Evidence of Ecological Traits of Drivers" type="vocab">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{1}
+<description> </description><term>{1}
+<description> </description></term><term>{2}
+<description> </description></term><term>{3}
+<description> </description></term></term>
+        <term>{2}
+<description> </description><term>{1}
+<description> </description></term><term>{2}
+<description> </description></term><term>{3}
+<description> </description></term></term>
+        <term>{3}
+<description> </description><term>{1}
+<description> </description></term><term>{2}
+<description> </description></term><term>{3}
+<description> </description></term></term>
+      </lookup>
+    </property>
+    <property name="Photo" type="file" file="true" thumbnail="true">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Comments" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Evidence of Characteristic Biota" type="vocab">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{1}
+<description> </description><term>{1}
+<description> </description></term><term>{2}
+<description> </description></term><term>{3}
+<description> </description></term></term>
+        <term>{2}
+<description> </description><term>{1}
+<description> </description></term><term>{2}
+<description> </description></term><term>{3}
+<description> </description></term></term>
+        <term>{3}
+<description> </description><term>{1}
+<description> </description></term><term>{2}
+<description> </description></term><term>{3}
+<description> </description></term></term>
+      </lookup>
+    </property>
+    <property name="Photo" type="file" file="true" thumbnail="true">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Photo ID" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Comments" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+  </ArchaeologicalElement>
+  <ArchaeologicalElement name="Ecosystem Section">
+    <description></description>
+    <property name="Ecosystem Section Ecosystem Identification Key" type="vocab" isIdentifier="true">
+      <description></description>
+      <formatString>$1</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{F}
+<description> </description><term>{F1}
+<description> </description><term>{F1_1_Permanent_upland_streams}
+<description> </description></term><term>{F1_2_Permanent_lowland_rivers}
+<description> </description></term><term>{F1_3_Freeze_thaw_rivers_and_streams}
+<description> </description></term><term>{F1_4_Seasonal_upland_streams}
+<description> </description></term><term>{F1_5_Seasonal_lowland_rivers}
+<description> </description></term></term><term>{F2}
+<description> </description><term>{F2_1_Large_permanent_freshwater_lakes}
+<description> </description></term><term>{F2_3_Seasonal_freshwater_lakes}
+<description> </description></term><term>{F2_5_Ephemeral_freshwater_lakes}
+<description> </description></term><term>{F2_6_Permanent_salt_and_soda_lakes}
+<description> </description></term><term>{F2_7_Ephemeral_salt_lakes}
+<description> </description></term></term><term>{F3}
+<description> </description><term>{F3_1_Large_reservoirs}
+<description> </description></term><term>{F3_2_Constructed_lacustrine_wetlands}
+<description> </description></term><term>{F3_4_Freshwater_aquafarms}
+<description> </description></term><term>{F3_5_Canals__ditches_and_drains}
+<description> </description></term></term></term>
+        <term>{FM}
+<description> </description><term>{FM1}
+<description> </description><term>{FM1_2_Permanently_open_riverine_estuaries_and_bays}
+<description> </description></term><term>{FM1_3_Intermittently_closed_and_open_lakes_and_lagoons}
+<description> </description></term></term></term>
+        <term>{MT}
+<description> </description><term>{MT1}
+<description> </description><term>{MT1_1_Rocky_Shorelines}
+<description> </description></term><term>{MT1_2_Muddy_Shorelines}
+<description> </description></term><term>{MT1_3_Sandy_Shorelines}
+<description> </description></term><term>{MT1_4_Boulder_and_cobble_shores}
+<description> </description></term></term><term>{MT2}
+<description> </description><term>{MT2_1_Coastal_shrublands_and_grasslands}
+<description> </description></term></term><term>{MT3}
+<description> </description><term>{MT3_1_Artificial_shorelines}
+<description> </description></term></term></term>
+        <term>{S}
+<description> </description><term>{S1}
+<description> </description><term>{S1_1_Aerobic_caves}
+<description> </description></term><term>{S1_2_Endolithic_systems}
+<description> </description></term></term><term>{S2}
+<description> </description><term>{S2_1_Anthropogenic_subterranean_voids}
+<description> </description></term></term></term>
+        <term>{SF}
+<description> </description><term>{SF1}
+<description> </description><term>{SF1_1_Underground_streams_and_pools}
+<description> </description></term><term>{SF1_2_Groundwater_ecosystems}
+<description> </description></term></term><term>{SF2}
+<description> </description><term>{SF2_1_Water_pipes_and_subterranean_canals}
+<description> </description></term><term>{SF2_2_Flooded_mines_and_other_voids}
+<description> </description></term></term></term>
+        <term>{SM}
+<description> </description><term>{SM1}
+<description> </description><term>{SM1_3_Sea_caves}
+<description> </description></term></term></term>
+        <term>{T}
+<description> </description><term>{T1}
+<description> </description><term>{T1_1_Tropical_Subtropical_lowland_rainforests}
+<description> </description></term><term>{T1_2_Tropical_Subtropical_dry_forests_and_scrubs}
+<description> </description></term><term>{T1_3_Tropical_Subtropical_montane_rainforests}
+<description> </description></term></term><term>{T2}
+<description> </description><term>{T2_3_Oceanic_cool_temperate_rainforests}
+<description> </description></term><term>{T2_4_Warm_temperate_laurophyll_forests}
+<description> </description></term><term>{T2_5_Temperate_pyric_humid_forests}
+<description> </description></term><term>{T2_6_Temperate_pyric_sclerophyll_forests_and_woodlands}
+<description> </description></term></term><term>{T3}
+<description> </description><term>{T3_1_Seasonally_dry_tropical_shrublands}
+<description> </description></term><term>{T3_2_Seasonally_dry_temperate_heath_and_shrublands}
+<description> </description></term></term><term>{T4}
+<description> </description><term>{T4_2_Pyric_tussock_savannas}
+<description> </description></term><term>{T4_3_Hummock_savannas}
+<description> </description></term><term>{T4_4_Temperate_woodlands}
+<description> </description></term><term>{T4_5_Temperate_subhumid_grasslands}
+<description> </description></term></term><term>{T5}
+<description> </description><term>{T5_1_Semi_desert_steppe}
+<description> </description></term><term>{T5_3_Sclerophyll_hot_deserts_and_semi_deserts}
+<description> </description></term></term><term>{T6}
+<description> </description><term>{T6_4_Temperate_alpine_grasslands_and_shrublands}
+<description> </description></term></term></term>
+        <term>{TF}
+<description> </description><term>{TF1}
+<description> </description><term>{TF1_2_Subtropical_temperate_forested_wetlands}
+<description> </description></term><term>{TF1_3_Permanent_marshes}
+<description> </description></term><term>{TF1_4_Seasonal_floodplain_marshes}
+<description> </description></term><term>{TF1_5_Episodic_arid_floodplains}
+<description> </description></term><term>{TF1_6_Boreal__temperate_and_montane_peat_bogs}
+<description> </description></term></term></term>
+      </lookup>
+    </property>
+    <property name="Ecosystem Confidence" type="measure" isIdentifier="true">
+      <description></description>
+      <formatString> $2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Measurement" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Unit of Measurement" type="vocab">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{Unit}
+<description> </description><term>{m_}
+<description> </description></term><term>{ha}
+<description> </description></term><term>{km_}
+<description> </description></term></term>
+        <term>{Range}
+<description> </description><term>{_1_ha}
+<description> </description></term><term>{1_10_ha}
+<description> </description></term><term>{10_100_ha}
+<description> </description></term><term>{_100_ha}
+<description> </description></term></term>
+      </lookup>
+    </property>
+    <property name="Comments" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+  </ArchaeologicalElement>
+</dataSchema>

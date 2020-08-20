@@ -1,0 +1,134 @@
+<opts>
+  <opt>
+    F
+    <opt>
+      F1
+      <opt>F1.1 Permanent upland streams</opt>
+      <opt>F1.2 Permanent lowland rivers</opt>
+      <opt>F1.3 Freeze-thaw rivers and streams</opt>
+      <opt>F1.4 Seasonal upland streams</opt>
+      <opt>F1.5 Seasonal lowland rivers</opt>
+    </opt>
+    <opt>
+      F2
+      <opt>F2.1 Large permanent freshwater lakes</opt>
+      <opt>F2.3 Seasonal freshwater lakes</opt>
+      <opt>F2.5 Ephemeral freshwater lakes</opt>
+      <opt>F2.6 Permanent salt and soda lakes</opt>
+      <opt>F2.7 Ephemeral salt lakes</opt>
+    </opt>
+    <opt>
+      F3
+      <opt>F3.1 Large reservoirs</opt>
+      <opt>F3.2 Constructed lacustrine wetlands</opt>
+      <opt>F3.4 Freshwater aquafarms</opt>
+      <opt>F3.5 Canals, ditches and drains</opt>
+    </opt>
+  </opt>
+  <opt>
+    FM
+    <opt>
+      FM1
+      <opt>FM1.2 Permanently open riverine estuaries and bays</opt>
+      <opt>FM1.3 Intermittently closed and open lakes and lagoons</opt>
+    </opt>
+  </opt>
+  <opt>
+    MT
+    <opt>
+      MT1
+      <opt>MT1.1 Rocky Shorelines</opt>
+      <opt>MT1.2 Muddy Shorelines</opt>
+      <opt>MT1.3 Sandy Shorelines</opt>
+      <opt>MT1.4 Boulder and cobble shores</opt>
+    </opt>
+    <opt>
+      MT2
+      <opt>MT2.1 Coastal shrublands and grasslands</opt>
+    </opt>
+    <opt>
+      MT3
+      <opt>MT3.1 Artificial shorelines</opt>
+    </opt>
+  </opt>
+  <opt>
+    S
+    <opt>
+      S1
+      <opt>S1.1 Aerobic caves</opt>
+      <opt>S1.2 Endolithic systems</opt>
+    </opt>
+    <opt>
+      S2
+      <opt>S2.1 Anthropogenic subterranean voids</opt>
+    </opt>
+  </opt>
+  <opt>
+    SF
+    <opt>
+      SF1
+      <opt>SF1.1 Underground streams and pools</opt>
+      <opt>SF1.2 Groundwater ecosystems</opt>
+    </opt>
+    <opt>
+      SF2
+      <opt>SF2.1 Water pipes and subterranean canals</opt>
+      <opt>SF2.2 Flooded mines and other voids</opt>
+    </opt>
+  </opt>
+  <opt>
+    SM
+    <opt>
+      SM1
+      <opt>SM1.3 Sea caves</opt>
+    </opt>
+  </opt>
+  <opt>
+    T
+    <opt>
+      T1
+      <opt>T1.1 Tropical/Subtropical lowland rainforests</opt>
+      <opt>T1.2 Tropical/Subtropical dry forests and scrubs</opt>
+      <opt>T1.3 Tropical/Subtropical montane rainforests</opt>
+    </opt>
+    <opt>
+      T2
+      <opt>T2.3 Oceanic cool temperate rainforests</opt>
+      <opt>T2.4 Warm temperate laurophyll forests</opt>
+      <opt>T2.5 Temperate pyric humid forests</opt>
+      <opt>T2.6 Temperate pyric sclerophyll forests and woodlands</opt>
+    </opt>
+    <opt>
+      T3
+      <opt>T3.1 Seasonally dry tropical shrublands</opt>
+      <opt>T3.2 Seasonally dry temperate heath and shrublands</opt>
+    </opt>
+    <opt>
+      T4
+      <opt>T4.2 Pyric tussock savannas</opt>
+      <opt>T4.3 Hummock savannas</opt>
+      <opt>T4.4 Temperate woodlands</opt>
+      <opt>T4.5 Temperate subhumid grasslands</opt>
+    </opt>
+    <opt>
+      T5
+      <opt>T5.1 Semi-desert steppe</opt>
+      <opt>T5.3 Sclerophyll hot deserts and semi-deserts</opt>
+    </opt>
+    <opt>
+      T6
+      <opt>T6.4 Temperate alpine grasslands and shrublands</opt>
+    </opt>
+  </opt>
+  <opt>
+    TF
+    <opt>
+      TF1
+      <opt>TF1.2 Subtropical/temperate forested wetlands</opt>
+      <opt>TF1.3 Permanent marshes</opt>
+      <opt>TF1.4 Seasonal floodplain marshes</opt>
+      <opt>TF1.5 Episodic arid floodplains</opt>
+      <opt>TF1.6 Boreal, temperate and montane peat bogs</opt>
+    </opt>
+  </opt>
+</opts>

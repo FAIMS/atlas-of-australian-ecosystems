@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='utf-8'?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:jr="http://openrosa.org/javarosa" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>FILL THIS IN</h:title>
+    <model>
+      <instance>
+        <faims id="FILL_THIS_IN">
+          <!--START: Style-->
+          <style>
+            <orientation>
+              <orientation/>
+            </orientation>
+            <even>
+              <layout_weight/>
+            </even>
+            <large>
+              <layout_weight/>
+            </large>
+          </style>
+          <!--END: Style-->
+          <User>
+            <User>
+              <Select_User/>
+            </User>
+          </User>
+          <Control>
+            <Main>
+              <New_Ecosystem/>
+            </Main>
+            <Search>
+              <Colgroup_0>
+                <Col_0>
+                  <Search_Term/>
+                </Col_0>
+                <Col_1>
+                  <Search_Button/>
+                </Col_1>
+              </Colgroup_0>
+              <Entity_Types/>
+              <Entity_List/>
+            </Search>
+          </Control>
+          <Ecosystem>
+            <Occurence_Record>
+              <Photo_of_Ecosystem/>
+              <Photo_of_Ecosystem_Button_1/>
+              <Colgroup_1>
+                <Col_1>
+                  <Latitude/>
+                </Col_1>
+                <Col_2>
+                  <Longitude/>
+                </Col_2>
+              </Colgroup_1>
+              <Colgroup_2>
+                <Col_1>
+                  <Northing/>
+                </Col_1>
+                <Col_2>
+                  <Easting/>
+                </Col_2>
+                <Col_3>
+                  <Accuracy/>
+                </Col_3>
+              </Colgroup_2>
+              <Take_From_GPS_1/>
+              <Address/>
+              <Select_one_or_more_ecosystems_form_the_list/>
+              <Ecosystem_Identification_Key/>
+              <Comments/>
+            </Occurence_Record>
+            <Ecosystem_Section>
+              <Record_Ecosystem_Sections/>
+              <Recorded_Ecosystem_Sections/>
+            </Ecosystem_Section>
+            <Threat_Evidence>
+              <Evidence_of_Threats/>
+              <Photo/>
+              <Photo_Button_1/>
+              <Comments/>
+            </Threat_Evidence>
+            <Driver_Evidence>
+              <Evidence_of_Ecological_Traits_of_Drivers/>
+              <Photo/>
+              <Photo_Button_1/>
+              <Comments/>
+            </Driver_Evidence>
+            <Biota>
+              <Evidence_of_Characteristic_Biota/>
+              <Photo/>
+              <Photo_Button_1/>
+              <Photo_ID/>
+              <Comments/>
+            </Biota>
+            <Hidden>
+              <Identifier/>
+            </Hidden>
+          </Ecosystem>
+          <Ecosystem_Section>
+            <Ecosystem_Section>
+              <Ecosystem_Identification_Key/>
+              <Ecosystem_Confidence/>
+              <Measurement/>
+              <Unit_of_Measurement/>
+              <Comments/>
+            </Ecosystem_Section>
+          </Ecosystem_Section>
+        </faims>
+      </instance>
+      <bind nodeset="/faims/Ecosystem_Section/Ecosystem_Section/Ecosystem_Confidence" type="decimal"/>
+      <bind nodeset="/faims/Ecosystem_Section/Ecosystem_Section/Measurement" type="decimal"/>
+    </model>
+  </h:head>
+  <h:body>
+    <!--START: Style-->
+    <group ref="style">
+      <label/>
+      <group ref="orientation">
+        <label/>
+        <input ref="orientation">
+          <label>horizontal</label>
+        </input>
+      </group>
+      <group ref="even">
+        <label/>
+        <input ref="layout_weight">
+          <label>1</label>
+        </input>
+      </group>
+      <group ref="large">
+        <label/>
+        <input ref="layout_weight">
+          <label>3</label>
+        </input>
+      </group>
+    </group>
+    <!--END: Style-->
+    <group ref="User">
+      <label>{User}</label>
+      <group ref="User" faims_scrollable="false">
+        <label>{User}</label>
+        <select1 appearance="compact" ref="Select_User">
+          <label>{Select_User}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+    <group ref="Control">
+      <label>{Control}</label>
+      <group ref="Main">
+        <label>{Main}</label>
+        <trigger ref="New_Ecosystem">
+          <label>{New_Ecosystem}</label>
+        </trigger>
+      </group>
+      <group ref="Search" faims_scrollable="false">
+        <label>{Search}</label>
+        <group ref="Colgroup_0" faims_style="orientation">
+          <label/>
+          <group ref="Col_0" faims_style="even">
+            <label/>
+            <input ref="Search_Term">
+              <label>{Search_Term}</label>
+            </input>
+          </group>
+          <group ref="Col_1" faims_style="large">
+            <label/>
+            <trigger ref="Search_Button">
+              <label>{Search}</label>
+            </trigger>
+          </group>
+        </group>
+        <select1 ref="Entity_Types">
+          <label>{Entity_Types}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select1 appearance="compact" ref="Entity_List">
+          <label>{Entity_List}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+    <group ref="Ecosystem" faims_archent_type="Ecosystem">
+      <label>{Ecosystem}</label>
+      <group ref="Occurence_Record">
+        <label>{Occurence_Record}</label>
+        <select faims_sync="true" type="camera" faims_attribute_name="Photo of Ecosystem" faims_attribute_type="measure" ref="Photo_of_Ecosystem">
+          <label>{Photo_of_Ecosystem}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select>
+        <trigger ref="Photo_of_Ecosystem_Button_1">
+          <label>{Photo_of_Ecosystem}</label>
+        </trigger>
+        <group ref="Colgroup_1" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Latitude" faims_attribute_type="measure" ref="Latitude" faims_read_only="true">
+              <label>{Latitude}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Longitude" faims_attribute_type="measure" ref="Longitude" faims_read_only="true">
+              <label>{Longitude}</label>
+            </input>
+          </group>
+        </group>
+        <group ref="Colgroup_2" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Northing" faims_attribute_type="measure" ref="Northing" faims_read_only="true">
+              <label>{Northing}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Easting" faims_attribute_type="measure" ref="Easting" faims_read_only="true">
+              <label>{Easting}</label>
+            </input>
+          </group>
+          <group ref="Col_3" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Accuracy" faims_attribute_type="measure" ref="Accuracy" faims_read_only="true">
+              <label>{Accuracy}</label>
+            </input>
+          </group>
+        </group>
+        <trigger ref="Take_From_GPS_1">
+          <label>{Take_From_GPS}</label>
+        </trigger>
+        <input faims_attribute_name="Address" faims_attribute_type="measure" ref="Address">
+          <label>{Address}</label>
+        </input>
+        <input faims_web="true" ref="Select_one_or_more_ecosystems_form_the_list">
+          <label>{Select_one_or_more_ecosystems_form_the_list}</label>
+        </input>
+        <input faims_attribute_name="Ecosystem Ecosystem Identification Key" faims_attribute_type="measure" ref="Ecosystem_Identification_Key">
+          <label>{Ecosystem_Identification_Key}</label>
+        </input>
+        <input faims_attribute_name="Comments" faims_attribute_type="measure" ref="Comments">
+          <label>{Comments}</label>
+        </input>
+      </group>
+      <group ref="Ecosystem_Section" faims_scrollable="false">
+        <label>{Ecosystem_Section}</label>
+        <trigger ref="Record_Ecosystem_Sections">
+          <label>{Record_Ecosystem_Sections}</label>
+        </trigger>
+        <select1 appearance="compact" ref="Recorded_Ecosystem_Sections">
+          <label>{Recorded_Ecosystem_Sections}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="Threat_Evidence">
+        <label>{Threat_Evidence}</label>
+        <select1 faims_attribute_name="Evidence of Threats" faims_attribute_type="vocab" ref="Evidence_of_Threats">
+          <label>{Evidence_of_Threats}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select faims_sync="true" type="camera" faims_attribute_name="Photo" faims_attribute_type="measure" ref="Photo">
+          <label>{Photo}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select>
+        <trigger ref="Photo_Button_1">
+          <label>{Photo}</label>
+        </trigger>
+        <input faims_attribute_name="Comments" faims_attribute_type="measure" ref="Comments">
+          <label>{Comments}</label>
+        </input>
+      </group>
+      <group ref="Driver_Evidence">
+        <label>{Driver_Evidence}</label>
+        <select1 faims_attribute_name="Evidence of Ecological Traits of Drivers" faims_attribute_type="vocab" ref="Evidence_of_Ecological_Traits_of_Drivers">
+          <label>{Evidence_of_Ecological_Traits_of_Drivers}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select faims_sync="true" type="camera" faims_attribute_name="Photo" faims_attribute_type="measure" ref="Photo">
+          <label>{Photo}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select>
+        <trigger ref="Photo_Button_1">
+          <label>{Photo}</label>
+        </trigger>
+        <input faims_attribute_name="Comments" faims_attribute_type="measure" ref="Comments">
+          <label>{Comments}</label>
+        </input>
+      </group>
+      <group ref="Biota">
+        <label>{Biota}</label>
+        <select1 faims_attribute_name="Evidence of Characteristic Biota" faims_attribute_type="vocab" ref="Evidence_of_Characteristic_Biota">
+          <label>{Evidence_of_Characteristic_Biota}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select faims_sync="true" type="camera" faims_attribute_name="Photo" faims_attribute_type="measure" ref="Photo">
+          <label>{Photo}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select>
+        <trigger ref="Photo_Button_1">
+          <label>{Photo}</label>
+        </trigger>
+        <input faims_attribute_name="Photo ID" faims_attribute_type="measure" ref="Photo_ID">
+          <label>{Photo_ID}</label>
+        </input>
+        <input faims_attribute_name="Comments" faims_attribute_type="measure" ref="Comments">
+          <label>{Comments}</label>
+        </input>
+      </group>
+      <group ref="Hidden" faims_hidden="true">
+        <label>{Hidden}</label>
+        <input faims_attribute_name="Identifier" faims_attribute_type="measure" ref="Identifier">
+          <label>{Identifier}</label>
+        </input>
+      </group>
+    </group>
+    <group ref="Ecosystem_Section" faims_archent_type="Ecosystem Section">
+      <label>{Ecosystem_Section}</label>
+      <group ref="Ecosystem_Section">
+        <label>{Ecosystem_Section}</label>
+        <select1 faims_attribute_name="Ecosystem Section Ecosystem Identification Key" faims_attribute_type="vocab" ref="Ecosystem_Identification_Key">
+          <label>{Ecosystem_Identification_Key}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <input faims_attribute_name="Ecosystem Confidence" faims_attribute_type="measure" ref="Ecosystem_Confidence">
+          <label>{Ecosystem_Confidence____}</label>
+        </input>
+        <input faims_attribute_name="Measurement" faims_attribute_type="measure" ref="Measurement">
+          <label>{Measurement}</label>
+        </input>
+        <select1 faims_attribute_name="Unit of Measurement" faims_attribute_type="vocab" ref="Unit_of_Measurement">
+          <label>{Unit_of_Measurement}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <input faims_attribute_name="Comments" faims_attribute_type="measure" ref="Comments">
+          <label>{Comments}</label>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

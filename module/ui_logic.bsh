@@ -331,22 +331,22 @@ REF_TO_TYPE.put("Ecosystem/Occurence_Record/Take_From_GPS_1", "button");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Address", "input");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Select_one_or_more_ecosystems_form_the_list", "webview");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Ecosystem_Identification_Key", "input");
-REF_TO_TYPE.put("Ecosystem/Occurence_Record/Comments", "input");
+REF_TO_TYPE.put("Ecosystem/Occurence_Record/Occurence_Record_Comments", "input");
 REF_TO_TYPE.put("Ecosystem/Ecosystem_Section/Record_Ecosystem_Sections", "button");
 REF_TO_TYPE.put("Ecosystem/Ecosystem_Section/Recorded_Ecosystem_Sections", "list");
 REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Evidence_of_Threats", "dropdown");
-REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Photo", "camera");
-REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Photo_Button_1", "button");
-REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Comments", "input");
+REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Threat_Evidence_Photo", "camera");
+REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Threat_Evidence_Photo_Button_1", "button");
+REF_TO_TYPE.put("Ecosystem/Threat_Evidence/Threat_Evidence_Comments", "input");
 REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Evidence_of_Ecological_Traits_of_Drivers", "dropdown");
-REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Photo", "camera");
-REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Photo_Button_1", "button");
-REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Comments", "input");
+REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Driver_Evidence_Photo", "camera");
+REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Driver_Evidence_Photo_Button_1", "button");
+REF_TO_TYPE.put("Ecosystem/Driver_Evidence/Driver_Evidence_Comments", "input");
 REF_TO_TYPE.put("Ecosystem/Biota/Evidence_of_Characteristic_Biota", "dropdown");
-REF_TO_TYPE.put("Ecosystem/Biota/Photo", "camera");
-REF_TO_TYPE.put("Ecosystem/Biota/Photo_Button_1", "button");
+REF_TO_TYPE.put("Ecosystem/Biota/Biota_Photo", "camera");
+REF_TO_TYPE.put("Ecosystem/Biota/Biota_Photo_Button_1", "button");
 REF_TO_TYPE.put("Ecosystem/Biota/Photo_ID", "input");
-REF_TO_TYPE.put("Ecosystem/Biota/Comments", "input");
+REF_TO_TYPE.put("Ecosystem/Biota/Biota_Comments", "input");
 REF_TO_TYPE.put("Ecosystem/Hidden/Identifier", "input");
 REF_TO_TYPE.put("Ecosystem_Section/Ecosystem_Section/Ecosystem_Identification_Key", "dropdown");
 REF_TO_TYPE.put("Ecosystem_Section/Ecosystem_Section/Ecosystem_Confidence", "input");
@@ -372,17 +372,17 @@ DATA_REFS.add("Ecosystem/Occurence_Record/Easting");
 DATA_REFS.add("Ecosystem/Occurence_Record/Accuracy");
 DATA_REFS.add("Ecosystem/Occurence_Record/Address");
 DATA_REFS.add("Ecosystem/Occurence_Record/Ecosystem_Identification_Key");
-DATA_REFS.add("Ecosystem/Occurence_Record/Comments");
+DATA_REFS.add("Ecosystem/Occurence_Record/Occurence_Record_Comments");
 DATA_REFS.add("Ecosystem/Threat_Evidence/Evidence_of_Threats");
-DATA_REFS.add("Ecosystem/Threat_Evidence/Photo");
-DATA_REFS.add("Ecosystem/Threat_Evidence/Comments");
+DATA_REFS.add("Ecosystem/Threat_Evidence/Threat_Evidence_Photo");
+DATA_REFS.add("Ecosystem/Threat_Evidence/Threat_Evidence_Comments");
 DATA_REFS.add("Ecosystem/Driver_Evidence/Evidence_of_Ecological_Traits_of_Drivers");
-DATA_REFS.add("Ecosystem/Driver_Evidence/Photo");
-DATA_REFS.add("Ecosystem/Driver_Evidence/Comments");
+DATA_REFS.add("Ecosystem/Driver_Evidence/Driver_Evidence_Photo");
+DATA_REFS.add("Ecosystem/Driver_Evidence/Driver_Evidence_Comments");
 DATA_REFS.add("Ecosystem/Biota/Evidence_of_Characteristic_Biota");
-DATA_REFS.add("Ecosystem/Biota/Photo");
+DATA_REFS.add("Ecosystem/Biota/Biota_Photo");
 DATA_REFS.add("Ecosystem/Biota/Photo_ID");
-DATA_REFS.add("Ecosystem/Biota/Comments");
+DATA_REFS.add("Ecosystem/Biota/Biota_Comments");
 DATA_REFS.add("Ecosystem/Hidden/Identifier");
 DATA_REFS.add("Ecosystem_Section/Ecosystem_Section/Ecosystem_Identification_Key");
 DATA_REFS.add("Ecosystem_Section/Ecosystem_Section/Ecosystem_Confidence");
@@ -3360,9 +3360,9 @@ addOnEvent("Ecosystem/Ecosystem_Section/Record_Ecosystem_Sections", "click", "on
 /*                   AUDIO, CAMERA, FILE AND VIDEO BINDINGS                   */
 /******************************************************************************/
 addOnEvent("Ecosystem/Occurence_Record/Photo_of_Ecosystem_Button_1", "click", "attachPictureTo(\"Ecosystem/Occurence_Record/Photo_of_Ecosystem\")");
-addOnEvent("Ecosystem/Threat_Evidence/Photo_Button_1", "click", "attachPictureTo(\"Ecosystem/Threat_Evidence/Photo\")");
-addOnEvent("Ecosystem/Driver_Evidence/Photo_Button_1", "click", "attachPictureTo(\"Ecosystem/Driver_Evidence/Photo\")");
-addOnEvent("Ecosystem/Biota/Photo_Button_1", "click", "attachPictureTo(\"Ecosystem/Biota/Photo\")");
+addOnEvent("Ecosystem/Threat_Evidence/Threat_Evidence_Photo_Button_1", "click", "attachPictureTo(\"Ecosystem/Threat_Evidence/Threat_Evidence_Photo\")");
+addOnEvent("Ecosystem/Driver_Evidence/Driver_Evidence_Photo_Button_1", "click", "attachPictureTo(\"Ecosystem/Driver_Evidence/Driver_Evidence_Photo\")");
+addOnEvent("Ecosystem/Biota/Biota_Photo_Button_1", "click", "attachPictureTo(\"Ecosystem/Biota/Biota_Photo\")");
 
 /******************************************************************************/
 /*                 BINDINGS FOR 'VIEW ATTACHED FILES' BUTTONS                 */
@@ -3737,9 +3737,9 @@ void duplicateEcosystem(){
   populateAuthorAndTimestamp(tabgroup);
   populateEntityListsInTabGroup(tabgroup);
   populateCameraPictureGallery("Ecosystem/Occurence_Record/Photo_of_Ecosystem", new ArrayList());
-  populateCameraPictureGallery("Ecosystem/Threat_Evidence/Photo", new ArrayList());
-  populateCameraPictureGallery("Ecosystem/Driver_Evidence/Photo", new ArrayList());
-  populateCameraPictureGallery("Ecosystem/Biota/Photo", new ArrayList());
+  populateCameraPictureGallery("Ecosystem/Threat_Evidence/Threat_Evidence_Photo", new ArrayList());
+  populateCameraPictureGallery("Ecosystem/Driver_Evidence/Driver_Evidence_Photo", new ArrayList());
+  populateCameraPictureGallery("Ecosystem/Biota/Biota_Photo", new ArrayList());
   executeOnEvent(tabgroup, "copy");
 
   saveCallback = new SaveCallback() {
@@ -3772,9 +3772,9 @@ void duplicateEcosystem(){
       excludeAttributes = new ArrayList();
 
       excludeAttributes.add("Photo of Ecosystem");
-      excludeAttributes.add("Photo");
-      excludeAttributes.add("Photo");
-      excludeAttributes.add("Photo");
+      excludeAttributes.add("Threat Evidence Photo");
+      excludeAttributes.add("Driver Evidence Photo");
+      excludeAttributes.add("Biota Photo");
 
       duplicateTabGroup(tabgroup, null, getExtraAttributes(result), excludeAttributes, saveCallback);
     }

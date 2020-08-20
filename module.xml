@@ -28,7 +28,7 @@ Select one or more ecosystems form the list:
       </markdown>
     </Select_one_or_more_ecosystems_form_the_list>
     <Ecosystem_Identification_Key/>
-    <Comments/>
+    <Occurence_Record_Comments/>
   </Occurence_Record>
 
   <Ecosystem_Section f="noscroll">
@@ -40,25 +40,25 @@ Select one or more ecosystems form the list:
     <Evidence_of_Threats t="dropdown">
       <!--@SOURCE: vocab/evidence-of-threats.xml-->
     </Evidence_of_Threats>
-    <Photo t="camera"/>
-    <Comments/>
+    <Threat_Evidence_Photo t="camera"/>
+    <Threat_Evidence_Comments/>
   </Threat_Evidence>
 
   <Driver_Evidence>
     <Evidence_of_Ecological_Traits_of_Drivers t="dropdown">
       <!--@SOURCE: vocab/placeholder.xml-->
     </Evidence_of_Ecological_Traits_of_Drivers>
-    <Photo t="camera"/>
-    <Comments/>
+    <Driver_Evidence_Photo t="camera"/>
+    <Driver_Evidence_Comments/>
   </Driver_Evidence>
 
   <Biota>
     <Evidence_of_Characteristic_Biota t="dropdown">
       <!--@SOURCE: vocab/placeholder.xml-->
     </Evidence_of_Characteristic_Biota>
-    <Photo t="camera"/>
+    <Biota_Photo t="camera"/>
     <Photo_ID/>
-    <Comments/>
+    <Biota_Comments/>
   </Biota>
 
   <Hidden f="hidden">

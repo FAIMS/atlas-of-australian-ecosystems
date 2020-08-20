@@ -22,12 +22,6 @@
     <Photo_of_Ecosystem t="camera"/>
     <gps/>
     <Address/>
-    <Select_one_or_more_ecosystems_form_the_list t="webview">
-      <markdown>
-Select one or more ecosystems form the list:
-      </markdown>
-    </Select_one_or_more_ecosystems_form_the_list>
-    <Ecosystem_Identification_Key/>
     <Occurence_Record_Comments/>
   </Occurence_Record>
 

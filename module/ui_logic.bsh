@@ -329,8 +329,6 @@ REF_TO_TYPE.put("Ecosystem/Occurence_Record/Easting", "input");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Accuracy", "input");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Take_From_GPS_1", "button");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Address", "input");
-REF_TO_TYPE.put("Ecosystem/Occurence_Record/Select_one_or_more_ecosystems_form_the_list", "webview");
-REF_TO_TYPE.put("Ecosystem/Occurence_Record/Ecosystem_Identification_Key", "input");
 REF_TO_TYPE.put("Ecosystem/Occurence_Record/Occurence_Record_Comments", "input");
 REF_TO_TYPE.put("Ecosystem/Ecosystem_Section/Record_Ecosystem_Sections", "button");
 REF_TO_TYPE.put("Ecosystem/Ecosystem_Section/Recorded_Ecosystem_Sections", "list");
@@ -371,7 +369,6 @@ DATA_REFS.add("Ecosystem/Occurence_Record/Northing");
 DATA_REFS.add("Ecosystem/Occurence_Record/Easting");
 DATA_REFS.add("Ecosystem/Occurence_Record/Accuracy");
 DATA_REFS.add("Ecosystem/Occurence_Record/Address");
-DATA_REFS.add("Ecosystem/Occurence_Record/Ecosystem_Identification_Key");
 DATA_REFS.add("Ecosystem/Occurence_Record/Occurence_Record_Comments");
 DATA_REFS.add("Ecosystem/Threat_Evidence/Evidence_of_Threats");
 DATA_REFS.add("Ecosystem/Threat_Evidence/Threat_Evidence_Photo");
@@ -418,8 +415,7 @@ TABS_AS_LIST.add("Ecosystem/Biota");
 TABS_AS_LIST.add("Ecosystem/Hidden");
 TABS_AS_LIST.add("Ecosystem_Section/Ecosystem_Section");
 
-ATTRIB_NAMES_NON_STANDARD.put("Ecosystem/Occurence_Record/Ecosystem_Identification_Key", "Ecosystem Ecosystem Identification Key");
-ATTRIB_NAMES_NON_STANDARD.put("Ecosystem_Section/Ecosystem_Section/Ecosystem_Identification_Key", "Ecosystem Section Ecosystem Identification Key");
+
 
 String getType(String ref) {
   String type = REF_TO_TYPE.get(ref);
@@ -4136,7 +4132,7 @@ void incAutoNum(String destPath) {
 /******************************************************************************/
 /*                         POPULATION VIA <MARKDOWN>                          */
 /******************************************************************************/
-populateWebViewHtml("Ecosystem/Occurence_Record/Select_one_or_more_ecosystems_form_the_list", "<p>Select one or more ecosystems form the list:</p>\n");
+
 
 /******************************************************************************/
 /*                POPULATION OF ENTITY AND CHILD ENTITY LISTS                 */

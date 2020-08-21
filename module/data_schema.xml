@@ -283,9 +283,14 @@
   </ArchaeologicalElement>
   <ArchaeologicalElement name="Ecosystem Section">
     <description></description>
+    <property name="Ecosystem Confidence" type="measure" isIdentifier="true">
+      <description></description>
+      <formatString>$2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
     <property name="Ecosystem Identification Key" type="vocab" isIdentifier="true">
       <description></description>
-      <formatString>$1</formatString>
+      <formatString>% $1</formatString>
       <appendCharacterString> - </appendCharacterString>
       <lookup>
         <term>{F}
@@ -375,11 +380,6 @@
 <description> </description></term><term>{TF1_6_Boreal__temperate_and_montane_peat_bogs}
 <description> </description></term></term></term>
       </lookup>
-    </property>
-    <property name="Ecosystem Confidence" type="measure" isIdentifier="true">
-      <description></description>
-      <formatString> $2</formatString>
-      <appendCharacterString> - </appendCharacterString>
     </property>
     <property name="Measurement" type="measure">
       <description></description>

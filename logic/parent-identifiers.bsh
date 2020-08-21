@@ -1,0 +1,47 @@
+/***************************** PARENT IDENTIFIERS *****************************/
+
+final String REF_IDENTIFIER = "Ecosystem/Hidden/Identifier";
+final String REF_ECOSYSTEM = "Ecosystem";
+final String REF_ECOSYSTEM_SECTION = "Ecosystem_Section";
+
+void updateEcosystemIdentifer () {
+  String getChildEntitiesQ = "" +
+    "SELECT childuuid, response " +
+    "  FROM (select childuuid, createdat" +
+    "          from (select childuuid, createdat, relationshipid" +
+    "                    from parentchild" +
+    "                   where parentuuid = '" + getUuid(REF_ECOSYSTEM) + "' " +
+    "                   and (childaenttypename = '" + getArchEntType(REF_ECOSYSTEM_SECTION) + "')" +
+    "                   order by createdat " +
+    "                   )" +
+    "          JOIN (SELECT relationshipid   " +
+    "                  FROM latestnondeletedrelationship JOIN relntype USING (relntypeid)  " +
+    "                 WHERE relntypename = '" + getArchEntType(REF_ECOSYSTEM) + " - " + getArchEntType(REF_ECOSYSTEM_SECTION) + "') USING (relationshipid)" +
+    "          order by createdat desc" +
+    "        )  " +
+    "  JOIN latestNonDeletedArchEntFormattedIdentifiers ON (childuuid = uuid)   " +
+    "  order by createdat desc, response";
+
+  FetchCallback cbPopulateDropDown = new FetchCallback() {
+    onFetch(result) {
+      if (result == null) return;
+
+      String ecosystemIdentifier = "";
+      for (int i = 0; i < result.size(); i++) {
+        ecosystemIdentifier += result.get(i).get(1);
+        if (i < result.size() - 1)
+          ecosystemIdentifier += ", ";
+      }
+
+      setFieldValue(REF_IDENTIFIER, ecosystemIdentifier);
+    }
+  };
+
+  fetchAll(getChildEntitiesQ, cbPopulateDropDown);
+}
+
+addOnEvent(
+    REF_ECOSYSTEM_SECTION,
+    "save",
+    "updateEcosystemIdentifer()"
+);

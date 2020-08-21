@@ -62,8 +62,7 @@
 </Ecosystem>
 
 <Ecosystem_Section>
-  <!--TODO: Should become parent's ID-->
-  <fmt>{{Ecosystem_Identification_Key}} {{Ecosystem_Confidence}}</fmt>
+  <fmt>{{Ecosystem_Confidence}}% {{Ecosystem_Identification_Key}}</fmt>
 
   <Ecosystem_Section>
     <Ecosystem_Identification_Key t="dropdown">
@@ -95,6 +94,7 @@
 </Ecosystem_Section>
 
 <logic><![CDATA[
+<!--@SOURCE: logic/parent-identifiers.bsh-->
 ]]></logic>
 
 </module>
